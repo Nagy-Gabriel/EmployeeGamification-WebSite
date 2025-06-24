@@ -113,6 +113,8 @@ DJANGO_SECRET_KEY=your-secret-key
 OPENAI_API_KEY=your-openai-api-key
 DATABASE_URL=mysql://user:password@localhost:3306/rocketquest
 
+---
+
 📚 Acest proiect a fost realizat ca parte a lucrării de licență de către Nagy Gabriel.
 🎓 Scopul său este academic, demonstrativ și poate fi extins pentru uz real în companii.
 📄 Distribuirea codului este permisă sub licență MIT.
