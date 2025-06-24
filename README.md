@@ -115,9 +115,12 @@ DATABASE_URL=mysql://user:password@localhost:3306/rocketquest
 ```
 ---
 ### Drepturi de autor
-📚 Acest proiect a fost realizat ca parte a lucrării de licență de către Nagy Gabriel.
+📚 Acest proiect a fost realizat ca parte a lucrării de licență de către Nagy Gabriel - Răzvan
+
 🎓 Scopul său este academic, demonstrativ și poate fi extins pentru uz real în companii.
+
 📄 Distribuirea codului este permisă sub licență MIT.
+
 
 
 
