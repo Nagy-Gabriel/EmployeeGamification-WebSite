@@ -15,7 +15,7 @@ RocketQuest este o platformă modernă pentru motivarea echipelor prin gamificar
 ---
 
 ## ⚙️ Rulare aplicație locală
-
+De asemenea este necesară o bază de date MySQL
 ### 🔹 1. Backend (Django)
 ```bash
 # Activează mediul virtual
@@ -32,3 +32,4 @@ http://127.0.0.1:8000
 cd gamification-frontend
 npm install
 npm start
+
