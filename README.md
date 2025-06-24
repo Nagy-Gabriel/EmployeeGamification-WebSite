@@ -28,7 +28,7 @@
 
 ## ⚙️ Rulare aplicație locală
 
-📌 Este necesară o bază de date MySQL configurată în `.env`.
+📌 Este necesară o bază de date MySQL configurată în `settings.py`.
 
 ### 🔹 Backend – Django
 
