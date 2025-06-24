@@ -33,3 +33,33 @@ cd gamification-frontend
 npm install
 npm start
 
+
+📦 Dependențe importante (exemple)
+🔸 Django (backend):
+djangorestframework
+
+djoser
+
+django-cors-headers
+
+python-dotenv
+
+openai
+
+Pillow (pentru fișiere media)
+
+drf-yasg (pentru documentație API)
+
+🔸 React (frontend):
+react-router-dom
+
+axios
+
+jwt-decode
+
+react-icons
+
+tailwindcss
+
+vite (dacă ai migrat din Create React App)
+
