@@ -1,4 +1,4 @@
-<h1 align="center">🚀 RocketQuest – Employee Gamification Platform</h1>
+  <h1 align="center">🚀 RocketQuest – Employee Gamification Platform</h1>
 
 <p align="center">
   <strong>O platformă modernă pentru motivarea echipelor prin gamificare</strong><br/>
@@ -38,3 +38,38 @@
 
 # Rulează serverul Django
 python manage.py runserver
+
+
+```
+Acces backend:
+```bash
+http://127.0.0.1:8000
+```
+
+### 🔹 Frontend – React
+```bash
+cd gamification-frontend
+npm install
+npm start
+```
+Acces frontend:
+```bash
+http://localhost:3000
+```
+📁 Structură generală
+
+employee-gamification/
+│
+├── gamification-frontend/     # Interfața React
+│   └── src/                   # Componente, pagini, API
+│
+├── gamification-backend/      # API Django
+│   ├── core/                  # Aplicația principală Django
+│   ├── manage.py
+│   └── .env                   
+│
+├── requirements.txt
+├── .gitignore
+└── README.md
+
+
