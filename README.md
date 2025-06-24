@@ -33,7 +33,7 @@ cd gamification-frontend
 npm install
 npm start
 
-
+```
 📦 Dependențe importante (exemple)
 🔸 Django (backend):
 djangorestframework
@@ -62,4 +62,15 @@ react-icons
 tailwindcss
 
 vite (dacă ai migrat din Create React App)
+
+
+Creează un fișier .env în directorul backend:
+
+OPENAI_API_KEY=sk-...
+DJANGO_SECRET_KEY=your-secret
+DATABASE_URL=mysql://localhost
+
+
+
+cest proiect este parte a lucrării de licență realizate de Nagy Gabriel și a fost construit pentru a integra tehnologii moderne într-o aplicație interactivă, modulară și scalabilă.
 
