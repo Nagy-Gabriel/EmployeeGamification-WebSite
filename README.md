@@ -1,76 +1,40 @@
-# 🚀 RocketQuest – Employee Gamification Platform
+<h1 align="center">🚀 RocketQuest – Employee Gamification Platform</h1>
 
-RocketQuest este o platformă modernă pentru motivarea echipelor prin gamificare. Include taskuri, questuri, quizuri AI, feedback și management de echipe – totul într-un sistem modular, modern și extensibil.
+<p align="center">
+  <strong>O platformă modernă pentru motivarea echipelor prin gamificare</strong><br/>
+  Taskuri, questuri, quizuri AI, feedback, niveluri, calendar de absențe și multe altele – totul într-un singur sistem!
+</p>
 
-##  Funcționalități
+<p align="center">
+  <img src="https://img.shields.io/badge/backend-Django-092E20?logo=django&logoColor=white"/>
+  <img src="https://img.shields.io/badge/frontend-React-61DAFB?logo=react&logoColor=black"/>
+  <img src="https://img.shields.io/badge/AI-OpenAI-412991?logo=openai&logoColor=white"/>
+  <img src="https://img.shields.io/badge/license-MIT-blue"/>
+</p>
 
-- Autentificare cu JWT
-- Management taskuri și echipe
-- Questuri cu puncte și XP
-- Quizuri generate automat cu AI
-- Ajutor rezolvare Task-uri cu AI și chat liber cu AI
-- Calendar absențe și feedback intern
-- Clasamente, badge-uri și niveluri
+---
+
+## 🔥 Funcționalități cheie
+
+✅ Autentificare securizată cu JWT  
+📋 Management complet al taskurilor și echipelor  
+🧠 Quizuri generate automat cu AI (GPT)  
+💬 Chat liber + asistent pentru rezolvarea taskurilor cu AI  
+🏆 Questuri, XP, niveluri și badge-uri  
+📅 Calendar pentru absențe + cereri de concediu  
+📊 Clasamente și feedback între colegi  
 
 ---
 
 ## ⚙️ Rulare aplicație locală
-De asemenea este necesară o bază de date MySQL
-### 🔹 1. Backend (Django)
+
+📌 Este necesară o bază de date MySQL configurată în `.env`.
+
+### 🔹 Backend – Django
+
 ```bash
 # Activează mediul virtual
 .\env\Scripts\activate
 
 # Rulează serverul Django
 python manage.py runserver
-
-Aplicația backend va rula implicit la:
-http://127.0.0.1:8000
-
-În alt terminal separat rulam pentru frontend:
-
-cd gamification-frontend
-npm install
-npm start
-
-```
-📦 Dependențe importante (exemple)
-🔸 Django (backend):
-djangorestframework
-
-djoser
-
-django-cors-headers
-
-python-dotenv
-
-openai
-
-Pillow (pentru fișiere media)
-
-drf-yasg (pentru documentație API)
-
-🔸 React (frontend):
-react-router-dom
-
-axios
-
-jwt-decode
-
-react-icons
-
-tailwindcss
-
-vite (dacă ai migrat din Create React App)
-
-
-Creează un fișier .env în directorul backend:
-
-OPENAI_API_KEY=sk-...
-DJANGO_SECRET_KEY=your-secret
-DATABASE_URL=mysql://localhost
-
-
-
-cest proiect este parte a lucrării de licență realizate de Nagy Gabriel și a fost construit pentru a integra tehnologii moderne într-o aplicație interactivă, modulară și scalabilă.
-
