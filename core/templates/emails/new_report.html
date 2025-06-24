@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #0e0e16;
+      font-family: Arial, sans-serif;
+      color: #eee;
+    }
+    .container {
+      padding: 20px;
+      border-radius: 12px;
+      background-color: #1a1a2e;
+      box-shadow: 0 0 10px #00ffff;
+    }
+    h2 {
+      color: #00ffff;
+      text-shadow: 0 0 8px #00ffff;
+    }
+    .info {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+    .btn {
+      background-color: #00aaff;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      box-shadow: 0 0 10px #00aaff;
+      display: inline-block;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>New Report Submitted</h2>
+    <div class="info"><strong>From:</strong> {{ sender }}</div>
+    <div class="info"><strong>Category:</strong> {{ category }}</div>
+    <div class="info"><strong>Title:</strong> {{ title }}</div>
+    <div class="info"><strong>Message:</strong><br>{{ message }}</div>
+
+    <a href="http://localhost:3000/reports" class="btn">View in Dashboard</a>
+  </div>
+</body>
+</html>

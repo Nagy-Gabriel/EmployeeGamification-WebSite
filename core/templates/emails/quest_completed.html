@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #f5f5f5; padding: 20px; }
+    .card {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+    .header { font-size: 22px; color: #1f7aed; font-weight: bold; margin-bottom: 20px; }
+    .content { font-size: 16px; margin-bottom: 20px; }
+    .btn {
+      background-color: #1f7aed;
+      color: white;
+      padding: 12px 18px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .footer { font-size: 12px; color: #aaa; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">🎉 Quest Completed</div>
+    <div class="content">
+      Great job, <strong>{{ user.username }}</strong>!<br><br>
+      {{ message }}
+    </div>
+    <a href="http://localhost:3000/quests" class="btn">See Quest</a>
+    <div class="footer">Keep leveling up on our platform!</div>
+  </div>
+</body>
+</html>

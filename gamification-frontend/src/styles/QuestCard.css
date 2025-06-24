@@ -1,0 +1,83 @@
+/* QuestCard.css */
+
+.quest-card {
+    background: #1f2937;           /* un bleumarin închis */
+    border-radius: 0.75rem;        /* 12px */
+    padding: 1rem;                 /* 16px */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .quest-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.4);
+  }
+  
+  .quest-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;  /* 8px */
+  }
+  
+  .quest-title {
+    font-size: 1.125rem;    /* 18px */
+    font-weight: 600;
+    color: #f3f4f6;         /* gri deschis */
+    margin: 0;
+  }
+  
+  .quest-category {
+    font-size: 0.75rem;     /* 12px */
+    text-transform: uppercase;
+    color: #9ca3af;         /* gri mediu */
+  }
+  
+  .quest-desc {
+    flex-grow: 1;
+    font-size: 0.875rem;    /* 14px */
+    color: #d1d5db;         /* gri */
+    margin: 0.5rem 0;       /* 8px 0 */
+    line-height: 1.4;
+  }
+  
+  .quest-rewards {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;    /* 14px */
+    color: #9ca3af;
+  }
+  
+  .quest-rewards span {
+    background: rgba(255,255,255,0.05);
+    padding: 0.25rem 0.5rem; /* 4px 8px */
+    border-radius: 0.375rem; /* 6px */
+  }
+  
+  /* Responsive: maxim 3 carduri pe rând */
+  @media (min-width: 1024px) {
+    .quests-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+  }
+  @media (min-width: 640px) and (max-width: 1023px) {
+    .quests-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+  @media (max-width: 639px) {
+    .quests-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+  

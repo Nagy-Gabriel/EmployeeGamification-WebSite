@@ -1,0 +1,75 @@
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none; /* să nu capteze click-urile */
+  }
+  
+  .dashboard-page {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(31,28,44,0.5), rgba(146,141,171,0.5));
+    background-size: 300% 300%;
+    animation: bgGradient 15s ease infinite;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+.intro-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    max-width: 900px;
+    color: rgb(226, 209, 247);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    animation: floatText 6s ease-in-out infinite;
+    user-select: none;
+    padding: 0 20px;
+  }
+  
+
+  .intro-text-container h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    color: rgb(226, 209, 247);
+    text-shadow:
+      0 0 8px #a67fffaa,
+      0 0 15px #8a62ff88;
+  }
+  
+  .intro-text-container p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: rgb(226, 209, 247);
+    margin-bottom: 16px;
+    font-weight: 500;
+    text-shadow: 0 0 6px #b499ff66;
+  }
+  
+  .intro-text-container p:last-child {
+    font-weight: 700;
+    color: #b08cff;
+    text-shadow:
+      0 0 6px #aa7affbb,
+      0 0 12px #aa7affcc;
+  }
+  
+  /* Animație floating text */
+  @keyframes floatText {
+    0%, 100% {
+      transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+      transform: translate(-50%, -50%) translateY(-15px);
+    }
+  }
+  

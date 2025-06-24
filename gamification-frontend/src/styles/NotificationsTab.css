@@ -1,0 +1,97 @@
+.notif-actions {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    text-align: right;
+  }
+  
+  .btn-clear-read {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  
+  .btn-clear-read:hover {
+    background: #c0392b;
+  }
+  
+  /* existing styles below... */
+  
+  .notif-container {
+    position: relative;
+  }
+  
+  .notif-icon {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .badge {
+    background: #e74c3c;
+    color: rgb(109, 54, 54);
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.75rem;
+    position: absolute;
+    top: -4px;
+    right: -8px;
+  }
+  
+  .notif-dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: rgb(71, 71, 71);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 4px;
+    z-index: 100;
+  }
+  
+  .notif-item {
+    padding: 8px 12px;
+    border-bottom: 1px solid rgb(71, 71, 71);
+  }
+  
+  .notif-item.read {
+    background: #000000;
+    color: #c9c5c5;
+  }
+  
+  .notif-msg {
+    margin-bottom: 4px;
+  }
+  
+  .notif-time {
+    font-size: 0.75rem;
+    color: #666;
+  }
+  
+  .btn-mark-read {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 2px 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.75rem;
+  }
+  
+  .btn-mark-read:hover {
+    background: #1b78b6;
+  }
+  
+  .no-notif {
+    padding: 16px;
+    text-align: center;
+    color: #777;
+  }
+  

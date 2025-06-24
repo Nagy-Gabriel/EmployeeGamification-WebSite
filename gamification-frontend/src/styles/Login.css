@@ -1,0 +1,173 @@
+/* Background gradient cu efect futurist */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+.login-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animatie racheta */
+.rocket {
+  position: absolute;
+  right: 100px;
+  bottom: 5%;
+  width: 300px;
+  animation: rocketFly 6s ease-in-out infinite;
+  filter: drop-shadow(0 0 5px #fff);
+  z-index: 10;
+}
+
+/* Animatie racheta care zboara din dreapta */
+@keyframes rocketFly {
+  0% {
+    right: -200px;
+    bottom: 50px;
+    transform: rotate(10deg) translateY(0);
+    opacity: 0;
+  }
+  25% {
+    right: 25%;
+    bottom: 300px;
+    transform: rotate(25deg) translateY(-30px);
+    opacity: 1;
+  }
+  50% {
+    right: 50%;
+    bottom: 620px;
+    transform: rotate(40deg) translateY(-60px);
+    opacity: 1;
+  }
+  75% {
+    right: 75%;
+    bottom: 150px;
+    transform: rotate(25deg) translateY(-30px);
+    opacity: 1;
+  }
+  100% {
+    right: -200px;
+    bottom: 20px;
+    transform: rotate(10deg) translateY(0);
+    opacity: 0;
+  }
+}
+
+
+/* Container login cu efect 3D */
+.login-container {
+  background: linear-gradient(145deg, #292b59, #444b85);
+  border-radius: 20px;
+  padding: 40px 50px;
+  width: 350px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  color: #fff;
+  text-align: center;
+}
+
+.login-container:hover {
+  transform: rotateY(1deg) rotateX(3deg);
+  box-shadow: 0 0 60px #670179, 0 0 20px #57012c inset;
+}
+
+/* Titlu cu efect neon */
+.login-title {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc;
+  font-weight: 700;
+}
+
+/* Formular inputuri */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-size: 1.1rem;
+  color: #fff;
+  box-shadow: inset 0 0 8px #ff0080;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.login-input::placeholder {
+  color: #ffc0ffaa;
+}
+
+.login-input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+  box-shadow: 0 0 15px #ff00cc, inset 0 0 10px #ff00cc;
+}
+
+/* Buton gradient animat */
+.login-button {
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  border: none;
+  border-radius: 25px;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 0 15px #ff00cc;
+  transition: box-shadow 0.1s ease;
+}
+
+.login-button:hover {
+  box-shadow: 0 0 25px #ff00cc, 0 0 40px #3333ff;
+}
+
+
+/* Footer */
+.login-footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.login-footer span {
+  color: #ff00cc;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.login-footer span:hover {
+  color: #ffaaff;
+}
+
+.password-toggle2 {
+  position: absolute;
+  top: 58%;
+  right: 5%;            
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: color 0.2s ease;
+  user-select: none;
+}

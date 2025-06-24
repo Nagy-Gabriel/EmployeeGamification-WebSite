@@ -1,0 +1,87 @@
+[
+  {
+    "category": "General",
+    "question": "What is RocketQuest?",
+    "answer": "RocketQuest is our employee-gamification platform—complete quests, earn points & badges, and climb the leaderboard!"
+  },
+  {
+    "category": "General",
+    "question": "How do I earn XP?",
+    "answer": "You earn XP by completing quests. Each quest’s reward shows how much XP it gives."
+  },
+  {
+    "category": "General",
+    "question": "How do I earn points?",
+    "answer": "Points are also earned by finishing quests or tasks. Points help you level up and rank higher on the leaderboard."
+  },
+  {
+    "category": "General",
+    "question": "What are badges?",
+    "answer": "Badges are visual achievements you unlock when you hit XP, task, or point milestones."
+  },
+  {
+    "category": "General",
+    "question": "How can I see the leaderboard?",
+    "answer": "Go to the “Leaderboard” page to see users ranked by points, tasks completed, and level."
+  },
+  {
+    "category": "Quests",
+    "question": "How do I start a quest?",
+    "answer": "On the “Quests” page, click “Start” on any active quest. You’ll then see its progress bar appear."
+  },
+  {
+    "category": "Quests",
+    "question": "What happens when a quest is in progress?",
+    "answer": "You get a countdown bar showing days/hours left until the quest’s due date."
+  },
+  {
+    "category": "Tasks",
+    "question": "How do I create a new task?",
+    "answer": "Managers and Admins can click “+ Add Task” on the Tasks page, fill in title, description, assignee, deadline—and save!"
+  },
+  {
+    "category": "Tasks",
+    "question": "Who can delete or edit a task?",
+    "answer": "Only the user’s role = Admin or Manager. Employees can only update their own task status to In Progress or In Verification."
+  },
+  {
+    "category": "Teams",
+    "question": "What are Teams for?",
+    "answer": "Teams let you group employees under a Manager, assign shared quests, view member schedules, and collaborate on group challenges."
+  },
+  {
+    "category": "Teams",
+    "question": "How do I join a Team?",
+    "answer": "On the Teams page, click “Request Join” next to the team you want. Your manager or an Admin must then approve your request."
+  },
+  {
+    "category": "Teams",
+    "question": "How do I remove someone from my Team?",
+    "answer": "Team Managers can submit a Remove Request. Admins can approve and actually remove a member from a team."
+  },
+  {
+    "category": "Teams",
+    "question": "Can I see my teammates’ progress?",
+    "answer": "On the Quests page, you’ll see only your own progress. For team-wide quests, teammates’ status is visible under the Team Dashboard."
+  },
+  {
+    "category": "Quests",
+    "question": "How are group quests different?",
+    "answer": "Group (team) quests require multiple members to each complete a subtask. Rewards are shared or split according to participation."
+  },
+  {
+    "category": "Support",
+    "question": "Who can assign shifts?",
+    "answer": "Only users with the Admin or Manager role can assign, move, or swap shifts on the Work-Schedule grid."
+  },
+  {
+    "category": "Support",
+    "question": "How do I view my profile stats?",
+    "answer": "Your profile shows total XP, points, level, badges, and tasks completed; accessible via the top-nav “Profile” link."
+  },
+  {
+    "category": "Support",
+    "question": "Who do I contact for help?",
+    "answer": "If you’re stuck, reach out to your Team Manager or email support@rocketquest.example.com."
+  }
+]

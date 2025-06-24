@@ -1,0 +1,173 @@
+/* TeamManagement.css — Unified Neon Theme */
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #0e0e1c, #09091a);
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  color: #f0f0f0;
+}
+
+/* Title */
+.container h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #84f0ff;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #00f0ff66;
+}
+
+/* Create Team Form */
+.team-form {
+  background: rgba(30, 30, 60, 0.9);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 0 auto 2rem;
+  max-width: 600px;
+  box-shadow: 0 0 15px #121230cc;
+}
+
+.team-form h3 {
+  color: #7b61ff;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.team-form input {
+  width: 100%;
+  background: #1d1d30;
+  color: #eee;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.team-form button {
+  width: 100%;
+  background: linear-gradient(to right, #6a00ff, #00e6e6);
+  color: white;
+  padding: 0.7rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s ease;
+}
+
+.team-form button:hover {
+  transform: scale(1.05);
+}
+
+/* Team Card */
+.team-card {
+  background: rgba(30, 30, 60, 0.9);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 15px #121230cc;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+}
+
+.team-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #7b61ff;
+}
+
+.team-card p {
+  margin: 0.3rem 0;
+  color: #ccc;
+}
+
+.team-card > div {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons in card */
+.team-card button {
+  background: #5ed3ff;
+  border: none;
+  color: #000;
+  padding: 0.5rem 0.9rem;
+  margin: 0.5rem 0.3rem 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.team-card button:hover {
+  background: #74e6ff;
+  transform: scale(1.05);
+}
+
+.team-card button[style*="background: #ff4d4f"] {
+  background: #ff4d4f;
+  color: white;
+}
+.team-card button[style*="background: #ff4d4f"]:hover {
+  background: #ff7779;
+}
+
+/* Dropdowns */
+.team-card select,
+.team-form select {
+  background: #1d1d30;
+  color: #eee;
+  border: 1px solid #444;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+
+/* Member List */
+.team-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.team-card li {
+  margin-bottom: 0.6rem;
+  padding: 0.5rem 0.75rem;
+  background: #1c1c2e;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ddd;
+}
+
+.team-card li button,
+.team-card li select {
+  margin-left: 0.5rem;
+}
+
+/* Shadow and glow match */
+button,
+input,
+select {
+  box-shadow: 0 0 6px rgba(100, 100, 255, 0.15);
+}
+
+/* Smooth animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,126 @@
+/* src/styles/WorkSchedule.css */
+.save-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+
+.work-schedule {
+    padding: 1rem;
+    position: relative;
+  }
+  
+  .filter-row {
+    margin-bottom: 0.5rem;
+  }
+  
+  .schedule-grid {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .schedule-grid th,
+  .schedule-grid td {
+    border: 1px solid #333;
+    text-align: center;
+    padding: 0.25rem;
+  }
+  
+  .hour-cell {
+    background: #222;
+    color: #fff;
+    width: 4rem;
+  }
+  
+  .cell {
+    height: 3rem;
+    vertical-align: middle;
+    position: relative;
+  }
+  
+  .cell select {
+    width: 90%;
+  }
+  
+  .unassign-btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: transparent;
+    border: none;
+    color: #f55;
+    cursor: pointer;
+  }
+  
+  .shift-pill {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    cursor: grab;
+    margin-bottom: 0.25rem;
+  }
+  
+  /* color coding */
+  .pill-normal   { background: #28a745; }
+  .pill-overtime { background: #ffc107; }
+  .pill-off      { background: #6c757d; }
+  
+  .cell-actions {
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+  }
+  
+  .small-btn {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 0.2rem;
+    cursor: pointer;
+  }
+  
+  /* Modal overrides */
+  .modal {
+    background: #222;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    color: #fff;
+    max-width: 400px;
+    margin: 5% auto;
+  }
+  .modal h2 {
+    margin-top: 0;
+  }
+  .modal label {
+    display: block;
+    margin-top: 0.5rem;
+  }
+  .modal input {
+    width: 100%;
+    padding: 0.25rem;
+    margin-top: 0.2rem;
+    border: 1px solid #444;
+    border-radius: 0.2rem;
+    background: #333;
+    color: #fff;
+  }
+  .modal button {
+    margin-top: 0.75rem;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 0.2rem;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 0.5rem;
+  }
+  

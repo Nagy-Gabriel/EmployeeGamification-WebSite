@@ -1,0 +1,15 @@
+/* index.css or global styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;       /* ✅ Prevent horizontal scroll bar */
+  background: #0e0e1c;      /* Match your app theme */
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}

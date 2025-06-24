@@ -1,0 +1,162 @@
+/* AbsenceCalendar.css */
+
+.ar-page {
+  padding: 2rem;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #ff6eff;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 0 0 10px #ff6eff88;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #84f0ff;
+  margin-bottom: 0.5rem;
+}
+
+.ar-form {
+  display: flex;
+  flex-direction: column;
+  background: rgba(20, 20, 50, 0.7);
+  border: 1px solid #444;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #4cfaff33;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.ar-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.ar-form input,
+.ar-form select,
+.ar-form textarea {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  margin-top: 0.4rem;
+  background-color: #1a1a2e;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.ar-form textarea {
+  resize: vertical;
+}
+
+.ar-error {
+  color: #ff4d4f;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ar-form button {
+  background: linear-gradient(90deg, #6c63ff, #00f0ff);
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.ar-form button:hover {
+  transform: scale(1.05);
+}
+
+.ar-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: rgba(15, 15, 35, 0.8);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #00fff77e;
+}
+
+.ar-table th,
+.ar-table td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  color: #eee;
+}
+
+.ar-table th {
+  background-color: #111;
+  color: #00f0ff;
+  font-weight: bold;
+  text-shadow: 0 0 6px #00f0ff;
+}
+
+.ar-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.ar-approve,
+.ar-deny {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0 5px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.ar-approve {
+  background: linear-gradient(45deg, #00ff7f, #00e6e6);
+}
+
+.ar-deny {
+  background: linear-gradient(45deg, #ff4d4f, #e60073);
+}
+
+.ar-approve:hover,
+.ar-deny:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Status colors */
+td.status-PENDING {
+  color: #ffcc00;
+  font-weight: bold;
+}
+td.status-APPROVED {
+  color: #00ff88;
+  font-weight: bold;
+}
+td.status-DENIED {
+  color: #ff4d4f;
+  font-weight: bold;
+}
+
+/* ✨ Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

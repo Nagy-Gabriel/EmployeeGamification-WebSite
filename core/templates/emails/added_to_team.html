@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Verdana, sans-serif; background: #f2f2f2; padding: 20px; }
+    .card {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .header { font-size: 20px; color: #333; margin-bottom: 15px; }
+    .content { font-size: 15px; margin-bottom: 20px; color: #555; }
+    .btn {
+      background-color: #0066cc;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .footer { margin-top: 25px; font-size: 11px; color: #999; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">👥 You've joined a new team!</div>
+    <div class="content">
+      Hi <strong>{{ user.username }}</strong>,<br><br>
+      {{ message }}
+    </div>
+    <a href="http://localhost:3000/team-management" class="btn">Go to Team</a>
+    <div class="footer">Thank you for using our platform!</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+/* AskAi.css — Refined Neon Look */
+
+.cb-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(180deg, #10101a 0%, #0a0a14 100%);
+  color: #f0f0f0;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+/* Header */
+.cb-header {
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #6e33b8, #1e1a40);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+.cb-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-shadow: 0 0 6px #d88aff;
+}
+
+/* Category Selector */
+.cb-faq-category {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  gap: 1rem;
+  background: rgba(20, 20, 35, 0.8);
+}
+.cb-faq-category label {
+  font-weight: 500;
+  color: #b8b8ff;
+}
+.cb-faq-category select {
+  background: #1d1d2f;
+  border: 1px solid #6666cc;
+  color: #eee;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+}
+
+/* FAQ Buttons */
+.cb-faqs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  padding: 1rem 2rem;
+  background: #141425;
+}
+.cb-faq-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  background: #292950;
+  color: #d6d6ff;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+.cb-faq-btn:hover {
+  background: #3a3a60;
+}
+.cb-faq-btn.active {
+  background: #7b61ff;
+  color: white;
+  box-shadow: 0 0 8px #7b61ff99;
+}
+
+/* Panel Grid */
+.cb-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Section Headings */
+.cb-section h2 {
+  color: #eab0ff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 6px #eab0ff33;
+}
+
+/* Inputs and File Select */
+.cb-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.cb-input {
+  background: #1c1c2e;
+  border: 1px solid #444466;
+  color: white;
+  padding: 0.6rem;
+  border-radius: 6px;
+}
+.cb-input:focus {
+  border-color: #7b61ff;
+  outline: none;
+  box-shadow: 0 0 6px #7b61ff66;
+}
+
+/* Buttons */
+.cb-btn {
+  background: linear-gradient(to right, #7b61ff, #5ed3ff);
+  border: none;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.cb-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Chat Window */
+.cb-window {
+  flex: 1;
+  background: #1b1b2c;
+  margin: 0 2rem 2rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  overflow-y: auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Message Placeholder */
+.cb-placeholder {
+  margin: auto;
+  color: #7a7a9a;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Chat Bubbles */
+.cb-message {
+  max-width: 75%;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  background: #2c2c40;
+  color: white;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.cb-message.user {
+  align-self: flex-end;
+  background: #5ed3ff;
+  color: #000;
+  border-bottom-right-radius: 0;
+}
+.cb-message.bot {
+  align-self: flex-start;
+  background: #7b61ff;
+  color: white;
+  border-bottom-left-radius: 0;
+}

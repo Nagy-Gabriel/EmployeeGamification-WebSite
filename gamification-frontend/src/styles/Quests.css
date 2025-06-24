@@ -1,0 +1,385 @@
+/* Quests.css */
+
+
+/* === Stiluri pentru user-status în header === */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .user-status {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem; /* spațiu față de titlu */
+  }
+  
+  .user-points,
+  .user-level {
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  /* XPBar */
+  .xp-bar {
+    position: relative;
+    background: #333;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 140px;
+    height: 0.75rem;
+  }
+  
+  .xp-bar-fill {
+    background: #4ade80; /* verde „progres” */
+    height: 100%;
+    transition: width 0.3s ease;
+  }
+  
+  .xp-bar-label {
+    position: absolute;
+    top: -1.25rem;
+    right: 0;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+
+/* Container principal */
+.quests-page {
+    padding: 1.5rem;
+    color: var(--text);
+    background: var(--bg);
+  }
+  
+  /* Header-ul paginii */
+  .quests-page .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .quests-page .header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Grid-ul de quests: 3 coloane */
+  .quests-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 4rem;
+
+  }
+  
+  /* Card individual */
+  .quest-card {
+    background: var(--card-bg);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform .2s, box-shadow .2s;
+  }
+  
+  .quest-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  
+  /* Title + categorie */
+  .quest-card .title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: .5rem;
+  }
+  
+  .quest-card h3 {
+    margin: 0;
+    font-size: 1.125rem;
+  }
+  
+  /* Progress bar */
+  .quest-card .progress-bar-container {
+    margin: .75rem 0;
+  }
+  
+  /* Rewards row */
+  .quest-card .rewards {
+    display: flex;
+    justify-content: space-between;
+    font-size: .875rem;
+  }
+  
+  /* Modal overlay */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background: var(--card-bg);
+    color: var(--text);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    position: relative;
+  }
+
+  .modal-title {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: var(--accent); /* neon pink */
+    text-shadow: 0 0 8px var(--accent);
+  }
+  
+  /* Grid pe 2 coloane, cu gap uniform */
+  .add-quest-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  
+  /* Titlu și descriere ocupă ambele coloane */
+  .add-quest-form input[name="title"],
+  .add-quest-form textarea[name="description"] {
+    grid-column: span 2;
+  }
+  
+  /* Datele: două intrări per rând */
+  .add-quest-form input[type="date"],
+  .add-quest-form input[type="number"],
+  .add-quest-form select {
+    width: 100%;
+  }
+  
+  /* Checkbox Active pe a doua coloană, centrat vertical */
+  .add-quest-form label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .add-quest-form label[for="is_active"] {
+    grid-column: 2 / 3;
+    justify-content: flex-start;
+  }
+  
+  /* Butoanele Cancel/Create */
+  .form-actions {
+    grid-column: span 2;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  
+  /* Input, select, textarea – stil unificat */
+  .add-quest-form input,
+  .add-quest-form select,
+  .add-quest-form textarea {
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    background: var(--input-bg);
+    color: var(--text);
+    font-size: 0.95rem;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+  }
+  
+  /* Placeholder mai subtil */
+  .add-quest-form ::placeholder {
+    color: rgba(255,255,255,0.6);
+  }
+  
+  /* Textarea înălțime mai mare */
+  .add-quest-form textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  /* Butoanele din formă */
+  .form-actions button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .btn-cancel {
+    background: #444;
+    color: #eee;
+  }
+  
+  .btn-cancel:hover {
+    background: #555;
+  }
+  
+  .btn-submit {
+    background: #2563eb;
+    color: #fff;
+  }
+  
+  .btn-submit:hover {
+    background: #1e40af;
+  }
+  /* Formular Add Quest */
+  .add-quest-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .add-quest-form input[type="text"],
+  .add-quest-form input[type="number"],
+  .add-quest-form input[type="date"],
+  .add-quest-form textarea,
+  .add-quest-form select {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid var(--border);
+    border-radius: .5rem;
+    background: var(--input-bg);
+    color: var(--text);
+    font-size: .9rem;
+  }
+  
+  .add-quest-form textarea {
+    grid-column: span 2;
+    min-height: 100px;
+  }
+  
+  .add-quest-form .full-width {
+    grid-column: span 2;
+  }
+  
+  .add-quest-form .actions {
+    grid-column: span 2;
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+    margin-top: 1rem;
+  }
+  
+  .add-quest-form .actions button {
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: .5rem;
+    font-weight: bold;
+  }
+  
+  /* Theme variables */
+  :root {
+    --bg: #1a1a2e;
+    --card-bg: #16213e;
+    --input-bg: #0f3460;
+    --text: #eaeaea;
+    --border: #53354a;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: var(--text);
+  }
+
+  .modal-info {
+    display: flex;
+    gap: 1.5rem;    /* distanța dintre cele două span-uri */
+    margin: 1rem 0; /* puțin spațiu față de descriere și butoane */
+    font-size: 0.95rem;
+  }
+
+
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;   /* distanța între fiecare buton */
+    margin-top: 1.25rem;
+  }
+  
+  /* 5. Stiluri minimale pentru butoane */
+  .modal-actions button {
+    flex-shrink: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  /* Poți ajusta culori/hover pentru fiecare: */
+  .btn-start    { background: #2563eb; color: #fff; }
+  .btn-start:hover    { background: #1e40af; }
+  
+  .btn-complete { background: #16a34a; color: #fff; }
+  .btn-complete:hover { background: #15803d; }
+  
+  .btn-delete   { background: #dc2626; color: #fff; }
+  .btn-delete:hover   { background: #b91c1c; }
+  
+  .btn-close    { background: #6b7280; color: #fff; }
+  .btn-close:hover    { background: #4b5563; }
+
+  .modal-rewards {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #eef;
+  }
+  
+  .reward-item strong {
+    color: #fff;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  .modal-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    justify-content: flex-end;
+  }
+  
+  .modal-actions button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+  }
+  
+  .btn-start    { background: #3b82f6; color: #fff; }
+  .btn-complete { background: #10b981; color: #fff; }
+  .btn-delete   { background: #ef4444; color: #fff; }
+  .btn-close    { background: #6b7280; color: #fff; }
