@@ -26,7 +26,8 @@ python manage.py runserver
 
 Aplicația backend va rula implicit la:
 http://127.0.0.1:8000
-```
+```bash
+
 În alt terminal separat rulam pentru frontend:
 
 cd gamification-frontend
