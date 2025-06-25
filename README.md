@@ -114,7 +114,26 @@ OPENAI_API_KEY=your-openai-api-key
 DATABASE_URL=mysql://user:password@localhost:3306/rocketquest
 ```
 ![Untitled](https://github.com/user-attachments/assets/5fbb8675-0ab9-4893-a705-394fdb05a5bf)
+
 ![image](https://github.com/user-attachments/assets/661f5911-7b8a-453e-906d-b57f378ab789)
+
+![image](https://github.com/user-attachments/assets/11c57812-117a-4d36-bcf5-5e13aec2f96e)
+
+![image](https://github.com/user-attachments/assets/208936f3-a684-4097-80cf-d9e36b7c88ca)
+
+![image](https://github.com/user-attachments/assets/b49032f8-d663-4a35-b2f8-d11c39073560)
+
+![image](https://github.com/user-attachments/assets/77d938b6-5c1d-4297-9d51-ac4164958e78)
+
+![image](https://github.com/user-attachments/assets/8bd6cb43-b8d1-4067-8845-64f310ee8427)
+
+![image](https://github.com/user-attachments/assets/b435a74b-04ec-40a6-8c74-7f49a62020d4)
+
+![image](https://github.com/user-attachments/assets/f4f3f057-bb06-46c6-984c-519e62cb3b81)
+
+![image](https://github.com/user-attachments/assets/3b505855-641b-4987-af12-2da3d72e10e1)
+
+![image](https://github.com/user-attachments/assets/8fe0adef-a38d-4770-92d1-7aa033ed80d7)
 
 ---
 ### Drepturi de autor
