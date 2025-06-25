@@ -113,7 +113,7 @@ DJANGO_SECRET_KEY=your-secret-key
 OPENAI_API_KEY=your-openai-api-key
 DATABASE_URL=mysql://user:password@localhost:3306/rocketquest
 ```
-![image](https://github.com/user-attachments/assets/a449aa7d-0e06-4304-86f0-96397fe920c7)
+![Untitled](https://github.com/user-attachments/assets/5fbb8675-0ab9-4893-a705-394fdb05a5bf)
 
 
 
