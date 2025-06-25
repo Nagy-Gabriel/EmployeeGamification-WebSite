@@ -114,6 +114,7 @@ OPENAI_API_KEY=your-openai-api-key
 DATABASE_URL=mysql://user:password@localhost:3306/rocketquest
 ```
 ![Untitled](https://github.com/user-attachments/assets/5fbb8675-0ab9-4893-a705-394fdb05a5bf)
+![image](https://github.com/user-attachments/assets/661f5911-7b8a-453e-906d-b57f378ab789)
 
 ---
 ### Drepturi de autor
