@@ -115,7 +115,25 @@ DATABASE_URL=mysql://user:password@localhost:3306/rocketquest
 ```
 ![Untitled](https://github.com/user-attachments/assets/5fbb8675-0ab9-4893-a705-394fdb05a5bf)
 
+![image](https://github.com/user-attachments/assets/19760111-8971-4d12-88c0-689410794eb6)
 
+![image](https://github.com/user-attachments/assets/d796c1f0-80a1-4d54-9b6f-4f93d049f788)
+
+![image](https://github.com/user-attachments/assets/84de1d3f-ccd3-43f7-b378-6ecfec44f092)
+
+![image](https://github.com/user-attachments/assets/552daa4e-95af-4744-8c52-1dd5bf5d6ce5)
+
+![image](https://github.com/user-attachments/assets/a4389907-d4af-4326-816f-0f7a284deb7f)
+
+![image](https://github.com/user-attachments/assets/5e126695-79fa-483d-a546-d8d275fd3fc1)
+
+![image](https://github.com/user-attachments/assets/2879dbd1-8559-4d49-8cae-ed5e77bb7661)
+
+![image](https://github.com/user-attachments/assets/febfdabe-093c-4814-ac51-4dee151e0bc6)
+
+![image](https://github.com/user-attachments/assets/5c0a292d-b7e9-430a-a518-cfa5eeb5cd17)
+
+![image](https://github.com/user-attachments/assets/4ec0fe3c-8a96-43f9-9a12-13a43bff4dd6)
 
 ---
 ### Drepturi de autor
