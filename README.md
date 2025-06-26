@@ -71,7 +71,6 @@ employee-gamification/
 │   ├── core/                  # Aplicația principală
 │   ├── manage.py
 │   └── .env                   # Variabile de mediu (IGNORAT în Git)
-├── requirements.txt           # Dependențe Python
 ├── .gitignore                 # Fișiere ignorate
 └── README.md
 ```
@@ -111,9 +110,7 @@ employee-gamification/
 Creează un fișier `.env` în folderul `gamification-backend/` cu următorul conținut:
 
 ```env
-DJANGO_SECRET_KEY=your-secret-key
 OPENAI_API_KEY=your-openai-api-key
-DATABASE_URL=mysql://user:password@localhost:3306/rocketquest
 ```
 ![Untitled](https://github.com/user-attachments/assets/5fbb8675-0ab9-4893-a705-394fdb05a5bf)
 
