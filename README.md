@@ -116,6 +116,10 @@ Creează un fișier `.env` în folderul `gamification-backend/` cu următorul co
 ```env
 OPENAI_API_KEY=your-openai-api-key
 ```
+![image](https://github.com/user-attachments/assets/b9c619e6-2749-4778-b559-e9c4a47a0fa5)
+
+![image](https://github.com/user-attachments/assets/da686174-3bcf-402a-9dd0-f2a1f5224a39)
+
 ![Untitled](https://github.com/user-attachments/assets/5fbb8675-0ab9-4893-a705-394fdb05a5bf)
 
 ![image](https://github.com/user-attachments/assets/661f5911-7b8a-453e-906d-b57f378ab789)
