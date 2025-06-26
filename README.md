@@ -63,18 +63,16 @@ http://localhost:3000
 ```
 ## Structură generală a proiectului
 
+```plaintext
 employee-gamification/
-│
-├── gamification-frontend/ # Interfața React
-│ └── src/ # Componente, pagini, stiluri
-│
-├── gamification-backend/ # Backend Django
-│ ├── core/ # Aplicația principală
-│ ├── manage.py
-│ └── .env # Variabile de mediu (IGNORAT în Git)
-│
-├── requirements.txt # Dependențe Python
-├── .gitignore # Fișiere ignorate
+├── gamification-frontend/     # Interfața React
+│   └── src/                   # Componente, pagini, stiluri
+├── gamification-backend/      # Backend Django
+│   ├── core/                  # Aplicația principală
+│   ├── manage.py
+│   └── .env                   # Variabile de mediu (IGNORAT în Git)
+├── requirements.txt           # Dependențe Python
+├── .gitignore                 # Fișiere ignorate
 └── README.md
 
 
