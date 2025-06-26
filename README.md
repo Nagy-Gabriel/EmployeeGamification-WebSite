@@ -14,14 +14,14 @@
 
 ---
 
-## 🔥 Funcționalități cheie
+##  Funcționalități cheie
 
 ✅ Autentificare securizată cu JWT  
 📋 Management complet al taskurilor și echipelor  
 🧠 Quizuri generate automat cu AI (GPT)  
 💬 Chat liber + asistent pentru rezolvarea taskurilor cu AI  
 🏆 Questuri, XP, niveluri și badge-uri  
-📅 Calendar pentru absențe + cereri de concediu  
+📅 Cereri de concediu  
 📊 Clasamente și feedback între colegi  
 
 ---
@@ -60,7 +60,7 @@ Acces frontend:
 ```bash
 http://localhost:3000
 ```
-## 📁 Structură generală a proiectului
+## Structură generală a proiectului
 
 employee-gamification/
 │
@@ -80,11 +80,11 @@ employee-gamification/
 
 ---
 
-## 🧪 Dependențe importante
+##  Dependențe importante
 
 ### 🔸 Backend – Django
 
-| 📦 Pachet               | 🛠 Funcționalitate principală                     |
+|  Pachet               | 🛠 Funcționalitate principală                     |
 |-------------------------|--------------------------------------------------|
 | `djangorestframework`   | Creare de API REST                              |
 | `djoser`                | Autentificare JWT + endpointuri standard        |
