@@ -74,8 +74,7 @@ employee-gamification/
 ├── requirements.txt           # Dependențe Python
 ├── .gitignore                 # Fișiere ignorate
 └── README.md
-
-
+```
 
 ---
 
