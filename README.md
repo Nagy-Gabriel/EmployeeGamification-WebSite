@@ -29,6 +29,7 @@
 ## ⚙️ Rulare aplicație locală
 
 📌 Este necesară o bază de date MySQL configurată în `settings.py`.
+
 Instalare Django
 ```bash
 pip install django
