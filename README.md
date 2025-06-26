@@ -136,7 +136,7 @@ OPENAI_API_KEY=your-openai-api-key
 
 ![image](https://github.com/user-attachments/assets/3b505855-641b-4987-af12-2da3d72e10e1)
 
-![image](https://github.com/user-attachments/assets/8fe0adef-a38d-4770-92d1-7aa033ed80d7)
+<img src="https://github.com/user-attachments/assets/8fe0adef-a38d-4770-92d1-7aa033ed80d7" alt="image" width="500"/>
 
 ---
 ### Drepturi de autor
