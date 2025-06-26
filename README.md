@@ -66,7 +66,11 @@ http://localhost:3000
 ```plaintext
 employee-gamification/
 ├── gamification-frontend/     # Interfața React
+│   └──public                  # Imagini utlizate
 │   └── src/                   # Componente, pagini, stiluri
+│   └── └── data               # Fișier JSON pentru întrebările FAQ
+│   └── └── pages              # Paginile principale de frontend (codul JS)
+│   └── └── styles             # Fișierele css pentru design
 ├── gamification-backend/      # Backend Django
 │   ├── core/                  # Aplicația principală
 │   ├── manage.py
