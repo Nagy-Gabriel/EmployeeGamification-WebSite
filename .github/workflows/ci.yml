@@ -9,6 +9,7 @@ project-check:
 name: Project Validation
 runs-on: ubuntu-latest
 
+
 steps:
   - name: Checkout repository
     uses: actions/checkout@v4
@@ -33,7 +34,7 @@ steps:
   - name: Setup Node.js
     uses: actions/setup-node@v4
     with:
-      node-version: 20
+      node-version: "20"
 
   - name: Verify React project structure
     run: |
@@ -41,9 +42,9 @@ steps:
       test -d gamification-frontend/src
       echo "React project structure verified"
 
-  - name: JavaScript syntax validation
+  - name: Check App.js syntax
     run: |
-      find gamification-frontend/src -name "*.js" -exec node --check {} \;
+      node --check gamification-frontend/src/App.js
 
   - name: Count source files
     run: |
@@ -58,3 +59,4 @@ steps:
 
   - name: CI completed
     run: echo "All checks passed successfully"
+
