@@ -1,48 +1,62 @@
 name: Employee Gamification CI
 
 on:
-  push:
-  pull_request:
+push:
+pull_request:
 
 jobs:
-  project-check:
-    runs-on: ubuntu-latest
+project-check:
+name: Project Validation
+runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+```
+steps:
+  - name: Checkout repository
+    uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
+  - name: Setup Python
+    uses: actions/setup-python@v5
+    with:
+      python-version: "3.12"
 
-      - name: Verify Django project structure
-        run: |
-          test -f manage.py
-          test -f backend/settings.py
-          test -d core
-          echo "Django structure OK"
+  - name: Verify Django project structure
+    run: |
+      test -f manage.py
+      test -f backend/settings.py
+      test -d core
+      echo "Django project structure verified"
 
-      - name: Python syntax check
-        run: |
-          python -m py_compile manage.py
-          python -m py_compile backend/settings.py
+  - name: Python syntax validation
+    run: |
+      python -m py_compile manage.py
+      python -m py_compile backend/settings.py
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
+  - name: Setup Node.js
+    uses: actions/setup-node@v4
+    with:
+      node-version: 20
 
-      - name: Verify React project structure
-        run: |
-          test -f gamification-frontend/package.json
-          test -d gamification-frontend/src
-          echo "React structure OK"
+  - name: Verify React project structure
+    run: |
+      test -f gamification-frontend/package.json
+      test -d gamification-frontend/src
+      echo "React project structure verified"
 
-      - name: JavaScript syntax check
-        run: |
-          node --check gamification-frontend/src/App.js
+  - name: JavaScript syntax validation
+    run: |
+      find gamification-frontend/src -name "*.js" -exec node --check {} \;
 
-      - name: CI completed
-        run: echo "All checks passed successfully"
+  - name: Count source files
+    run: |
+      echo "Python files:"
+      find . -name "*.py" | wc -l
+      echo "JavaScript files:"
+      find gamification-frontend/src -name "*.js" | wc -l
+
+  - name: Repository summary
+    run: |
+      echo "Repository validation completed successfully"
+
+  - name: CI completed
+    run: echo "All checks passed successfully"
+```
