@@ -6,6 +6,7 @@ on:
 
 jobs:
   project-check:
+    name: Project Validation
     runs-on: ubuntu-latest
 
     steps:
@@ -22,9 +23,8 @@ jobs:
           test -f manage.py
           test -f backend/settings.py
           test -d core
-          echo "Django structure OK"
 
-      - name: Python syntax check
+      - name: Python syntax validation
         run: |
           python -m py_compile manage.py
           python -m py_compile backend/settings.py
@@ -32,15 +32,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: "20"
 
       - name: Verify React project structure
         run: |
           test -f gamification-frontend/package.json
           test -d gamification-frontend/src
-          echo "React structure OK"
 
-      - name: JavaScript syntax check
+      - name: Check App.js syntax
         run: |
           node --check gamification-frontend/src/App.js
 
