@@ -181,9 +181,8 @@ employee-gamification/
 
 # 📸 Capturi de ecran
 
-Păstrează aici toate imaginile tale:
 
-```markdown
+
 ![image](https://github.com/user-attachments/assets/b9c619e6-2749-4778-b559-e9c4a47a0fa5)
 
 ![image](https://github.com/user-attachments/assets/da686174-3bcf-402a-9dd0-f2a1f5224a39)
@@ -210,9 +209,6 @@ Păstrează aici toate imaginile tale:
 
 <img src="https://github.com/user-attachments/assets/8fe0adef-a38d-4770-92d1-7aa033ed80d7" alt="image" width="500"/>
 
-```
-
-Sau lipește direct linkurile GitHub Images pe care le ai deja.
 
 ---
 
